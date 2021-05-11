@@ -7,7 +7,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import { setContext } from 'apollo-link-context';
 
 const httpLink = createHttpLink({
-    uri: 'http://localhost:4000'        //will be different in production tho
+    uri: 'https://pure-earth-48145.herokuapp.com/'        //will be different in production tho
 });
 
 const authLink = setContext(() => {
